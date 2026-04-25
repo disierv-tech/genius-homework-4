@@ -1,0 +1,52 @@
+.advantages-section {
+  position: relative;
+
+  &__decor {
+    position: absolute;
+    background-image: url("../images/background-figure.png");
+    background-position: 45%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1440px;
+    width: 100%;
+    aspect-ratio: 1440 / 1506;
+    pointer-events: none;
+    z-index: -1;
+    top: -130px;
+
+    @media screen and (min-width: $bp-tablet) {
+      position: absolute;
+      top: -100px;
+      left: 0;
+      height: 1440px;
+
+      background-position: center;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      z-index: -1;
+    }
+  }
+
+  &__title {
+    max-width: 432px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 180px 180px 180px;
+    gap: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 180px;
+      gap: 56px;
+    }
+  }
+}

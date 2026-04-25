@@ -1,0 +1,9 @@
+.link {
+  font-size: 18px;
+
+  &:hover {
+    color: var(--color-brand-blue);
+    font-weight: 700;
+    font-size: 18px;
+  }
+}

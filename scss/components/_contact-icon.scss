@@ -1,0 +1,15 @@
+.contact-icon {
+  transition-property: fill;
+  transition-delay: 0.2s;
+  height: 32px;
+  width: 32px;
+
+  @media screen and (min-width: $bp-tablet) {
+    height: 42px;
+    width: 42px;
+  }
+
+  &:hover {
+    fill: var(--color-brand-blue);
+  }
+}

@@ -1,0 +1,46 @@
+.backdrop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(1, 31, 74, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  padding: 20px;
+
+  &.is-hiden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  padding: 42px 144px;
+  max-width: 724px;
+  max-height: 680px;
+  width: 100%;
+  height: 100%;
+  border-radius: 48px;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #c4c4c4 transparent;
+  background-image: url(../images/modal-background.svg);
+  background-color: var(--color-primary-dark);
+
+  &__close-btn {
+    top: 42px;
+    right: 42px;
+    width: 32px;
+    height: 32px;
+  }
+
+  &__title {
+    color: var(--color-primary-light);
+    margin-bottom: 40px;
+  }
+}

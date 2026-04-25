@@ -1,0 +1,45 @@
+.decor-stars {
+  animation-name: spin-mobile;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  @media screen and (min-width: $bp-tablet) {
+    position: absolute;
+    animation-name: spin;
+  }
+
+  &.big {
+    margin-left: auto;
+    height: 40px;
+
+    // bottom: 0;
+    // right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      height: 64px;
+      top: 350px;
+      left: 118px;
+    }
+  }
+  &.small {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      height: 16px;
+      top: 284px;
+      left: 472px;
+    }
+  }
+  &.medium {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      height: 40px;
+      right: 0;
+      top: 46px;
+    }
+  }
+}

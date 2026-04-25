@@ -1,0 +1,33 @@
+.button-to-action {
+  display: block;
+  padding: 10px 22px;
+  background-color: #2b7fff;
+  margin: 0 auto 8px;
+  color: var(--color-primary-light);
+  border: 2px solid var(--color-brand-blue);
+  border-radius: 24px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  transition-property: background-color, color, border;
+  transition-delay: 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 12px 28px;
+    margin: 0 0 14px;
+    border-radius: 32px;
+    font-size: 18px;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+    border: 2px solid var(--color-brand-blue);
+  }
+
+  &__description {
+    max-width: 238px;
+    text-align: center;
+    color: var(--color-under-button);
+  }
+}

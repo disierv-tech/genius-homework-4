@@ -1,0 +1,125 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 70px 0 46px;
+  background-image:
+    linear-gradient(
+      38deg,
+      #fff 0%,
+      rgba(255, 255, 255, 0.78) 31.23%,
+      rgba(255, 255, 255, 0.2) 50.39%,
+      rgba(255, 255, 255, 0) 68.37%
+    ),
+    url("../images/main-background-mb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-image:
+      linear-gradient(
+        94deg,
+        #fff 9.65%,
+        rgba(255, 255, 255, 0.85) 26.08%,
+        rgba(255, 255, 255, 0.19) 52.74%,
+        rgba(255, 255, 255, 0) 74.46%
+      ),
+      url("../images/main-background.jpg");
+    padding: 124px;
+    background-position: bottom;
+    min-height: calc(100vw * 0.4);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 14px;
+    background: url("../images/wavesNegative.svg") center bottom / 100% auto
+      no-repeat;
+    background-size: 100% 100%;
+
+    pointer-events: none;
+    z-index: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      height: 62px;
+      opacity: 0.6;
+    }
+  }
+
+  &::after {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 100%;
+      height: 60px;
+      filter: blur(2px);
+      background: url("../images/wavesNegative.svg") center bottom / 100% auto
+        no-repeat;
+      background-size: 100% 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
+  &__container {
+    @media screen and (min-width: $bp-tablet) {
+      padding-left: 106px;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    color: var(--color-brand-blue);
+    font-family: Play, sans-serif;
+    font-weight: 700;
+    font-size: 54px;
+    text-transform: capitalize;
+    line-height: 0.85;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      max-width: 530px;
+      text-align: left;
+      padding-top: 16px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__btn-description.text-btn-discription {
+    max-width: 186px;
+    text-align: center;
+    color: var(--color-under-button);
+    margin: 0 auto;
+    line-height: 1.64;
+    font-size: 11px;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: 0;
+      max-width: 238px;
+      font-size: 12px;
+    }
+  }
+}
