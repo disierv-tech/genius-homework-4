@@ -3,7 +3,7 @@
     display: block;
     margin-bottom: 16px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       display: grid;
       grid-template-columns: 44px minmax(0, 1fr) 44px;
       gap: 32px;

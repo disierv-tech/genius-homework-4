@@ -12,7 +12,7 @@
   transition-property: background-color, color, border;
   transition-delay: 0.2s;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desctop) {
     padding: 12px 28px;
     margin: 0 0 14px;
     border-radius: 32px;

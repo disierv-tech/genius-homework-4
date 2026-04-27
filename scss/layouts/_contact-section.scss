@@ -14,7 +14,7 @@
     height: 232px;
     width: 100%;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       position: static;
       border-radius: 32px;
       width: 605px;
@@ -32,8 +32,11 @@
     margin-bottom: 188px;
 
     @media screen and (min-width: $bp-tablet) {
-      padding: 48px 56px;
+      padding: 56px 64px;
+      width: 100%;
+    }
 
+    @media screen and (min-width: $bp-desctop) {
       margin-bottom: 0;
     }
   }

@@ -1,5 +1,8 @@
 .link {
   font-size: 18px;
+  transition-property: color, font-weight, font-size;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s;
 
   &:hover {
     color: var(--color-brand-blue);

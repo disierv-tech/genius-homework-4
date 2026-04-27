@@ -5,28 +5,26 @@
   background-image: url(../images/footer-background.svg);
   line-height: 1.18;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desctop) {
     padding: 56px 0;
   }
 
   & .link {
     font-size: 14px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       font-size: 16px;
     }
   }
 
   &__link {
     color: var(--color-primary-light);
-    transition-property: color, font-weight;
-    transition-delay: 0.2s;
     font-size: 16px;
 
     &--mb {
       display: block;
 
-      @media screen and (min-width: $bp-tablet) {
+      @media screen and (min-width: $bp-desctop) {
         display: none;
       }
     }
@@ -48,7 +46,7 @@
     gap: 20px;
     flex-direction: column;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       flex-direction: row;
     }
   }
@@ -61,8 +59,11 @@
     text-align: center;
 
     @media screen and (min-width: $bp-tablet) {
-      flex-direction: row;
       text-align: left;
+    }
+
+    @media screen and (min-width: $bp-desctop) {
+      flex-direction: row;
       gap: 20px;
     }
   }
@@ -74,9 +75,15 @@
     padding-left: 4px;
 
     @media screen and (min-width: $bp-tablet) {
+      margin: 0 0 32px;
+      padding-left: 0;
+    }
+
+    @media screen and (min-width: $bp-desctop) {
       margin: 0;
       width: 72px;
       height: 36px;
+      flex-grow: 1;
     }
   }
 
@@ -97,14 +104,14 @@
     max-width: 228px;
     margin: 0 auto;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       margin: 0;
     }
 
     &--tb {
       display: none;
 
-      @media screen and (min-width: $bp-tablet) {
+      @media screen and (min-width: $bp-desctop) {
         display: block;
       }
     }
@@ -117,7 +124,7 @@
   &__address-items li {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       display: block;
       margin-bottom: 16px;
     }
@@ -130,6 +137,9 @@
 
     @media screen and (min-width: $bp-tablet) {
       justify-content: left;
+    }
+
+    @media screen and (min-width: $bp-desctop) {
       gap: 24px;
     }
   }
@@ -143,7 +153,7 @@
     color: var(--color-official-info);
     font-size: 13px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       padding-top: 16px;
     }
   }

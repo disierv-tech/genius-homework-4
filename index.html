@@ -66,11 +66,69 @@
               </a>
             </li>
           </ul>
-          <button class="header__burger">
-            <svg width="24" height="24">
+          <button class="header__burger menu-btn-open">
+            <svg class="header__burger--icon">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
+          <div class="mobile-menu">
+            <a class="mobile-menu__logo" href="./index.html">
+              <img src="./images/logo.svg" alt="Логотип Beauty Zone"
+            /></a>
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg class="mobile-menu__btn-close--icon">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__menu">
+              <li>
+                <a class="link text-primary-dark" href="#about-us-section"
+                  >Про нас</a
+                >
+              </li>
+              <li>
+                <a class="link text-primary-dark" href="#advantages-section"
+                  >Чому ми</a
+                >
+              </li>
+              <li>
+                <a class="link text-primary-dark" href="#product-section"
+                  >Наші процедури</a
+                >
+              </li>
+              <li>
+                <a class="link text-primary-dark" href="#contact-section"
+                  >Контакти</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__icons">
+              <li>
+                <a href="#">
+                  <svg class="contact-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-telephone"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="contact-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <svg class="contact-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -110,26 +168,44 @@
             <div class="about-us-section__photos">
               <img
                 class="about-us-section__photo about-us-section__photo--before"
+                srcset="
+                  ./images/women-face-1.webp   1x,
+                  ./images/women-face-1-2x.jpg 2x
+                "
                 src="./images/women-face-1.webp"
                 alt="women befor visit clinic"
               />
               <img
                 class="about-us-section__photo about-us-section__photo--after"
+                srcset="
+                  ./images/women-face-2.webp   1x,
+                  ./images/women-face-2-2x.jpg 2x
+                "
                 src="./images/women-face-2.webp"
                 alt="women after visit clinic"
               />
               <img
                 class="decor-stars big"
+                srcset="./images/star-big.png 1x, ./images/star-big-2x.png 2x"
                 src="./images/star-big.png"
                 alt="Велика декоративна зірочка"
               />
               <img
                 class="decor-stars small"
+                srcset="
+                  ./images/star-small.png    1x,
+                  ./images/star-small-2x.png 2x
+                "
                 src="./images/star-small.png"
                 alt="Маленька  декоративна зірочка"
               />
               <img
+                srcset="
+                  ./images/star-medium.png    1x,
+                  ./images/star-medium-2x.png 2x
+                "
                 class="decor-stars medium"
+                src="./images/star-medium.png 1x, ./images/star-medium-2x.png 2x"
                 src="./images/star-medium.png"
                 alt="Середня  декоративна зірочка"
               />
@@ -150,8 +226,8 @@
                   <use href="./images/icons.svg#icon-a-science"></use>
                 </svg>
                 <p class="advantages-card__text">
-                  Всі наші косметологи мають <br />
-                  вищу медичну освіту <br />та стаж роботи від 5 років
+                  Всі наші косметологи мають вищу медичну освіту та стаж роботи
+                  від 5 років
                 </p>
               </li>
               <li class="advantages-card">
@@ -193,6 +269,10 @@
                   <article class="product-card">
                     <img
                       class="product-card__photo"
+                      srcset="
+                        ./images/product-mask.jpg    1x,
+                        ./images/product-mask-2x.jpg 2x
+                      "
                       src="./images/product-mask.jpg"
                       alt="process of use masks"
                     />
@@ -206,6 +286,10 @@
                   <article class="product-card">
                     <img
                       class="product-card__photo"
+                      srcset="
+                        ./images/product-ine.jpg    1x,
+                        ./images/product-ine-2x.jpg 2x
+                      "
                       src="./images/product-ine.jpg"
                       alt="process of use injection"
                     />
@@ -218,6 +302,10 @@
                 <li class="product-section__slide swiper-slide">
                   <article class="product-card">
                     <img
+                      srcset="
+                        ./images/product-face-cleaning.jpg    1x,
+                        ./images/product-face-cleaning-2x.jpg 2x
+                      "
                       class="product-card__photo"
                       src="./images/product-face-cleaning.jpg"
                       alt="process of face cleaning"
@@ -229,6 +317,10 @@
                   <article class="product-card">
                     <img
                       class="product-card__photo"
+                      srcset="
+                        ./images/product-mask.jpg    1x,
+                        ./images/product-mask-2x.jpg 2x
+                      "
                       src="./images/product-mask.jpg"
                       alt="process of use masks"
                     />
@@ -242,6 +334,10 @@
                   <article class="product-card">
                     <img
                       class="product-card__photo"
+                      srcset="
+                        ./images/product-ine.jpg    1x,
+                        ./images/product-ine-2x.jpg 2x
+                      "
                       src="./images/product-ine.jpg"
                       alt="process of use injection"
                     />
@@ -254,6 +350,10 @@
                 <li class="product-section__slide swiper-slide">
                   <article class="product-card">
                     <img
+                      srcset="
+                        ./images/product-face-cleaning.jpg    1x,
+                        ./images/product-face-cleaning-2x.jpg 2x
+                      "
                       class="product-card__photo"
                       src="./images/product-face-cleaning.jpg"
                       alt="process of face cleaning"
@@ -362,6 +462,7 @@
     <footer class="footer">
       <img
         class="footer__image"
+        srcset="./images/footer-image.png 1x, ./images/footer-image-2x.png 2x"
         src="./images/footer-image.png"
         alt="Засоби догляду за собою"
       />
@@ -480,12 +581,16 @@
     </footer>
     <div class="backdrop is-hiden">
       <div class="modal">
-        <button class="modal__close-btn close-button" type="button"></button>
+        <button class="modal__close-btn close-button" type="button">
+          <svg class="modal__close-btn--icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
         <h2 class="modal__title section__title">Замовити дзвінок</h2>
 
         <form class="form">
           <p class="form__text">
-            Запишіться <span class="title-accent">безкоштовно</span> та
+            Запишіться <span class="text-brand-blue">безкоштовно</span> та
             отримайте подарунок
           </p>
           <div>
@@ -545,5 +650,6 @@
     <script src="./js/modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

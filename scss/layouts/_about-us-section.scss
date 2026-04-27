@@ -1,5 +1,6 @@
 .about-us-section {
   padding: 14px 0 20px;
+
   @media screen and (min-width: $bp-tablet) {
     margin-bottom: 176px;
   }
@@ -19,7 +20,7 @@
     display: block;
     z-index: 3;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       position: relative;
       display: flex;
       gap: 32px;
@@ -43,7 +44,7 @@
   &__photos {
     padding: 13px 10px 10px 0;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       padding: 0;
       display: flex;
       flex-grow: 1;
@@ -64,7 +65,7 @@
     &--before {
       display: none;
 
-      @media screen and (min-width: $bp-tablet) {
+      @media screen and (min-width: $bp-desctop) {
         display: block;
         position: absolute;
         top: 0;
@@ -75,7 +76,7 @@
     &--after {
       display: none;
 
-      @media screen and (min-width: $bp-tablet) {
+      @media screen and (min-width: $bp-desctop) {
         display: block;
         position: absolute;
         bottom: 0;

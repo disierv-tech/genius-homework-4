@@ -6,7 +6,7 @@
   width: 100%;
   z-index: 10;
 
-  @media screen and (min-width: $bp-tablet) {
+  @media screen and (min-width: $bp-desctop) {
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.25);
     padding: 32px;
@@ -18,7 +18,7 @@
     gap: 40px;
     margin: 0 -20px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       margin: 0;
     }
   }
@@ -34,7 +34,7 @@
     width: 58px;
     height: 30px;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       width: 74px;
       height: 42px;
       flex-shrink: 0;
@@ -44,7 +44,7 @@
   &__menu {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       display: flex;
       align-items: center;
       flex-grow: 1;
@@ -56,7 +56,7 @@
   &__icons {
     display: none;
 
-    @media screen and (min-width: $bp-tablet) {
+    @media screen and (min-width: $bp-desctop) {
       display: flex;
       align-items: center;
       gap: 32px;
@@ -75,7 +75,17 @@
     background-color: transparent;
     align-self: flex-start;
 
-    @media screen and (min-width: $bp-tablet) {
+    &--icon {
+      width: 24px;
+      height: 24px;
+
+      @media screen and (min-width: $bp-tablet) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    @media screen and (min-width: $bp-desctop) {
       display: none;
     }
   }
